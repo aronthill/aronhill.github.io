@@ -13,25 +13,10 @@
       line-height: 1.6;
       color: #222;
     }
-    .row {
-      display: flex;
-      align-items: flex-start;
-      gap: 20px;
-    }
-    .headshot {
-      width: 120px;      /* make photo small */
-      border-radius: 50%;
-      flex-shrink: 0;
-      margin-top: 4px;
-    }
-    h1 {
-      font-size: 2rem;
-      margin: 0 0 0.4em 0;
-    }
-    p {
-      margin: 0.6em 0;
-      text-align: justify;
-    }
+    .row { display: flex; align-items: flex-start; gap: 20px; }
+    .headshot { width: 120px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
+    h1 { font-size: 2rem; margin: 0 0 0.4em 0; }
+    p { margin: 0.6em 0; text-align: justify; }
     @media (max-width: 600px) {
       .row { flex-direction: column; align-items: center; text-align: center; }
       .headshot { width: 100px; }
@@ -40,15 +25,12 @@
 </head>
 <body>
   <div class="row">
-    <img class="Headshot" src="Headshot.jpg" alt="Headshot of Aron Hill" />
+    <!-- IMPORTANT: case must match EXACTLY -->
+    <img class="headshot" src="Headshot.jpg?v=2" alt="Headshot of Aron Hill" />
     <div>
       <h1>Aron Hill</h1>
-      <p>
-        Dr Aron Hill is a Senior Research Fellow in the School of Psychology, and co-lead of the Brain Systems and Neurotherapeutics Lab within the Cognitive Neuroscience Unit.
-      </p>
-      <p>
-        Aron’s research integrates human electrophysiology, functional neuroimaging, and non-invasive brain stimulation to investigate how the brain communicates and adapts in both health and disease. His work focuses on understanding large-scale functional connectivity and the brain’s capacity to regulate neural activity, known as excitation–inhibition (E-I) balance.
-      </p>
+      <p>Dr Aron Hill is a Senior Research Fellow in the School of Psychology, and co-lead of the Brain Systems and Neurotherapeutics Lab within the Cognitive Neuroscience Unit.</p>
+      <p>Aron’s research integrates human electrophysiology, functional neuroimaging, and non-invasive brain stimulation to investigate how the brain communicates and adapts in both health and disease. His work focuses on understanding large-scale functional connectivity and the brain’s capacity to regulate neural activity, known as excitation–inhibition (E-I) balance.</p>
     </div>
   </div>
 </body>
