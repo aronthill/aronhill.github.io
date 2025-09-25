@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>Aron Hill</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: sans-serif;
+      max-width: 700px;
       margin: 60px auto;
-      padding: 0 20px;
-      max-width: 900px;
       line-height: 1.6;
-      color: #222;
+      color: #333;
     }
-    .row { display: flex; align-items: flex-start; gap: 20px; }
-    .headshot { width: 120px; border-radius: 50%; flex-shrink: 0; margin-top: 4px; }
-    h1 { font-size: 2rem; margin: 0 0 0.4em 0; }
-    p { margin: 0.6em 0; text-align: justify; }
-    @media (max-width: 600px) {
-      .row { flex-direction: column; align-items: center; text-align: center; }
-      .headshot { width: 100px; }
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
     }
+    .profile img {
+      width: 120px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    h1 { margin-top: 0; }
+    p { margin: 0.6em 0; }
   </style>
 </head>
 <body>
-  <div class="row">
-    <!-- IMPORTANT: case must match EXACTLY -->
-    <img class="headshot" src="Headshot.jpg?v=2" alt="Headshot of Aron Hill" />
+  <div class="profile">
+    <img src="headshot.jpg" alt="Aron Hill">
     <div>
       <h1>Aron Hill</h1>
       <p>Dr Aron Hill is a Senior Research Fellow in the School of Psychology, and co-lead of the Brain Systems and Neurotherapeutics Lab within the Cognitive Neuroscience Unit.</p>
